@@ -8,6 +8,22 @@ class Calculator
     @operator = operator
     @const = const
   end
+
+
+
   def addition(num1,num2,operator)
-    if ()
+    
+    if !['+','-','/','*'].include?(operator)
+      puts 'Unavaliabable operator has been selected'
+    else
+      case operator
+      when '+'
+        puts 'sumar'
+      when '-'
+        puts 'restar'
+      when '/'
+        puts 'dividir'
+      when '*'
+        puts 'multiplicar'
+    end
 end
