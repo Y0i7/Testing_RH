@@ -8,10 +8,25 @@ class Calculator
     @operator = operator
     @const = const
   end
+  
+  def addition(num1, num2)
+    return (num1 + num2)
+  end
+
+  def subtraction(num1, num2)
+    return (num1 - num2)
+  end
+
+  def multiplication(num1, num2)
+    return (num1 * num2)
+  end
+
+  def division(num1, num2)
+    return (num1 / num2)
+  end
 
 
-
-  def addition(num1,num2,operator)
+  def calculation(num1,num2,operator)
     
     if !['+','-','/','*'].include?(operator)
       puts 'Unavaliabable operator has been selected'
@@ -27,3 +42,4 @@ class Calculator
         puts 'multiplicar'
     end
 end
+
